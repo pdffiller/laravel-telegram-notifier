@@ -1,7 +1,7 @@
 <?php
 namespace  pdffiller\LaravelTelegramNotifier;
-use App\Exceptions\ChannelIdException;
-use App\Exceptions\TokenException;
+use pdffiller\LaravelTelegramNotifier\ChannelIdException;
+use pdffiller\LaravelTelegramNotifier\TokenException;
 use GuzzleHttp;
 class TelegramNotifier
 {
