@@ -15,6 +15,7 @@ To get error mesages in TELEGRAM Chat
 **Step 4: Add to .env correct Chat_id and  Telegram_Token**
 		TELEGRAM_TOKEN =**********
 		CHAT_ID = =**********	
+		
 **Step 5: Edit App/Exceptions/Handler.php**
 	Change  
 		  public function report(Exception $exception)
