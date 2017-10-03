@@ -1,0 +1,12 @@
+{
+    "name": "pdffiller/laravel-telegram-notifier",
+    "description": "Error logging in Telegram",
+    "type": "library",
+    "license": "MIT",
+    "require": {},
+	"autoload":{
+		"psr-4":{
+      "pdffiller\\LaravelTelegramNotifier\\":"src"
+    }
+	}
+}
