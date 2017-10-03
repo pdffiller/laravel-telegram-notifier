@@ -30,7 +30,7 @@ To get error mesages in TELEGRAM Chat
 	 public function report(Exception $exception)
     {
 		//Optionally You can add TELEGRAM_TOKEN and Chat_id into the constructor
-        (new TelegramNotifier())->Notify($exception->getMessage(),"");
+        (new TelegramNotifier())->notify($exception->getMessage(),"");
     }
 
 	
