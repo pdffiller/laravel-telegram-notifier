@@ -9,7 +9,7 @@ class TelegramNotifier
             throw new TokenException();
         }
 
-        if(!$channel_id && !$this->token = env("CHAT_ID")) {
+        if(!$channel_id && !$this->channel_id = env("CHAT_ID")) {
             throw new ChannelIdException();
         }
 
