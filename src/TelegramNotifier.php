@@ -17,7 +17,8 @@ class TelegramNotifier
     public function notify($message, $code)
     {
         $client = new GuzzleHttp\Client();
-        $message_text = "Error Code - ".$code."<br>"."Error Body - ".$message;
+        $message = $message ? $message : "Empty body";
+        $message_text = urlencode("Message - " . $message . "\n" . "Error Code - " . $code);
         $url = 'https://api.telegram.org/bot'.$this->token.'/sendMessage?chat_id='.$this->channel_id.'&text='.$message_text;
         $res = $client->request('GET', $url);
         if($res->getStatusCode()!=200){

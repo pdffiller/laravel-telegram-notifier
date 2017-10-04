@@ -3,10 +3,12 @@ To get error mesages in TELEGRAM Chat
 	
 	"repositories": [
         {
+            "name":"pdffiller/laravel-telegram-notifier",
 			"type": "vcs",
             "url": "https://github.com/pdffiller/laravel-telegram-notifier.git"
         }
-    ]
+    ],
+    "minimum-stability": "dev",
 
 **Step 2: Run** "composer require pdffiller/laravel-telegram-notifier" **in command prompt**
 
@@ -19,7 +21,7 @@ To get error mesages in TELEGRAM Chat
 **Step 5: Edit App/Exceptions/Handler.php**
 	Change  
 	
-	 public function report(Exception $exception)
+    public function report(Exception $exception)
     {
         parent::report($exception);
     }
@@ -27,7 +29,7 @@ To get error mesages in TELEGRAM Chat
 	
 	On
 	
-	 public function report(Exception $exception)
+    public function report(Exception $exception)
     {
 		//Optionally You can add TELEGRAM_TOKEN and Chat_id into the constructor
         (new TelegramNotifier())->notify($exception->getMessage(),"");
