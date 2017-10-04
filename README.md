@@ -8,7 +8,7 @@ To get error mesages in TELEGRAM Chat
         }
     ]
 
-**Step 2: Run** "composer require pdffiller/pdffiller/laravel-telegram-notifier" **in command prompt**
+**Step 2: Run** "composer require pdffiller/laravel-telegram-notifier" **in command prompt**
 
 **Step 3: Add to \config\app.php** 'providers' => [... \pdffiller\LaravelTelegramNotifier\LaravelTelegramNotifierServiceProvider::class
 
