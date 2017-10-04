@@ -4,7 +4,7 @@ To get error mesages in TELEGRAM Chat
 	"repositories": [
         {
 			"type": "vcs",
-            "url": "https://github.com/tet-zu/laravel-telegram-notifier.git"
+            "url": "https://github.com/pdffiller/laravel-telegram-notifier.git"
         }
     ]
 
